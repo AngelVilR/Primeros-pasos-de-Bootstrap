@@ -1,0 +1,118 @@
+@import url('./styles.css');
+
+body {
+
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: 3% auto 10%;
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    padding-right: 1%;
+    color: #5e5e5e;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+        padding: 20px;
+        width: 100px;
+    }
+
+    a {
+        text-decoration: none;
+
+        .login {
+            padding: 1%;
+            width: 150px;
+            text-align: center;
+            border-radius: 25px;
+            background-color: rgb(93, 47, 179);
+            color: #c1c1c1;
+            transition: background-color 0.5s ease;
+
+            &:hover {
+                background-color: rgb(58, 32, 105);
+            }
+        }
+    }
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+
+    h2 {
+        text-align: center;
+        margin: 3%;
+    }
+
+    h4 {
+        padding-bottom: 2%;
+    }
+
+    .tabs .tab-pane,
+    .navigation {
+        text-align: center;
+
+        img {
+            margin-top: 30px;
+            border-radius: 15px;
+        }
+    }
+
+    .tabs {
+        height: 35rem;
+    }
+
+    .carouselSection {
+        height: 45rem;
+
+        .carousel {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
+
+    .buttons,
+    .dropdowns,
+    .paginationSection {
+        height: 15rem;
+    }
+
+    section {
+        background-color: #ffffff;
+        margin: 1%;
+        padding: 1%;
+        width: 700px;
+        border-radius: 15px;
+    }
+
+    span {
+        color: rgb(106, 227, 227);
+    }
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    color: #5e5e5e;
+
+    h2 {
+        margin: 10px;
+    }
+
+    img {
+        padding: 20px;
+        width: 100px;
+    }
+}
